@@ -24,7 +24,7 @@ resource "aws_instance" "blog" {
   vpc_security_group_ids = [module.blog_sg.security_group_id]
 
   tags = {
-    Name = "Learning Terraform"
+    Name = "Learning Terraform Naeem"
   }
 }
 
@@ -38,4 +38,5 @@ module "blog_sg" {
   ingress_cidr_blocks = ["0.0.0.0/0"]
   egress_rules = ["all-all"]
   egress_cidr_blocks = ["0.0.0.0/0"]
+
 }
